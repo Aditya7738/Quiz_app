@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    tools:context=".QuestionsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp">
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:trackColor="@color/white"
+                android:progressTint="@color/teal_200"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:max="10"
+                android:id="@+id/question_progress"
+                android:progress="1"
+                android:minHeight="50dp"
+                android:indeterminate="false"
+                />
+            <TextView
+                android:id="@+id/text_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1/10"
+                android:textColor="@color/white"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                />
+
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question \n Question"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/question"
+        />
+
+    <ImageView
+        android:id="@+id/questionImage"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_margin="30dp"
+        android:src="@drawable/christian_bale"
+        android:contentDescription="TODO"
+        android:scaleType="fitXY"
+        android:padding="10dp"
+        android:background="@drawable/image_border"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/option_one"
+            android:layout_margin="10dp"
+            android:text="Option 1 Option 1"
+            android:textSize="18sp"
+            android:background="@drawable/options_border"
+            android:padding="15dp"
+            android:gravity="center_horizontal"
+            android:textColor="#7A8089"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/option_two"
+            android:layout_margin="10dp"
+            android:text="Option 2 Option 2"
+            android:textSize="18sp"
+            android:background="@drawable/options_border"
+            android:padding="15dp"
+            android:gravity="center_horizontal"
+            android:textColor="#7A8089"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/option_three"
+            android:layout_margin="10dp"
+            android:text="Option 3 Option 3"
+            android:textSize="18sp"
+            android:background="@drawable/options_border"
+            android:padding="15dp"
+            android:gravity="center_horizontal"
+            android:textColor="#7A8089"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/option_four"
+
+            android:text="Option 4 Option 4"
+            android:textSize="18sp"
+            android:background="@drawable/options_border"
+            android:padding="15dp"
+            android:gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:textColor="#7A8089"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textSize="18sp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+
+            android:id="@+id/submit_btn"/>
+
+
+    </LinearLayout>
+</ScrollView>
